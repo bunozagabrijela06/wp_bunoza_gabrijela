@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Web stranica</title>
+</head>
+<body>
+    <h1>Dobrodošli na moju web stranicu!</h1>
+   
+    <p> <strong>
+         Ovo je prvi paragraf na mojoj web stranici. 
+        </strong> </p>
+  
+        <p> <em> 
+        Ovo je moj drugi paragraf.
+    </em> </p>
+   
+    <li> <ul>
+        <li>Zovem se Gabrijela.</li>
+        <li>Studentica sam Učiteljskog studija na Sveučilištu u Slavonskom Brodu.</li>
+        <li>Imam 24 godine.</li>
+    </ul></li>
+
+    <li><ol>
+        <li>Moja omiljena boja je žuta.</li>
+        <li>U slobodno vrijeme volim gledati serije.</li>
+        <li>Volim životinje i imam psa kao kućnog ljubimca.</li>
+
+    </ol></li>
+    
+    <img src="../Audio_video/friends.jpg" alt="Prijatelji"  height="200">
+    <br>
+
+    <a a href="https://www.unisb.hr/">Kliknite ovdje</a>
+    <br>
+    <a a href="https://www.netflix.com/hr/"> Netflix Hrvatska</a>
+
+
+    <h2>Tablica</h2>
+     <table border="1">
+        <tr>  
+            <th colspan="6">Time table</th>
+            
+        </tr>
+        <tr> 
+          <td rowspan="6"><strong>Hours</strong></td>
+            <td><strong>Mon </strong></td>
+            <td><strong>Tue</strong></td>
+            <td><strong>Wed</strong></td>
+            <td><strong>Thu</strong></td>
+            <td><strong>Fri</strong></td>
+        </tr> 
+        <tr>
+            
+            <td colspan="2">Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+            
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+
+        <tr>
+            <td colspan="6"><strong>LUNCH</strong></td>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td colspan="2">Science</td>
+            <td rowspan="2">Project</td>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+        </table>
+
+        <h3>Forme u HTML-u</h3>
+        <form action="#" method="get">
+    <label for="ime">Unesi korisničko ime:</label>
+    <input type="text" id="ime" placeholder="Unesi korisničko ime...">
+    <br>
+    <br>
+    <label for="pass">Unesi šifru:</label>
+    <input type="password" name="pass" id="pass" required placeholder="Unesi šifru...">
+    <br>
+    <br>
+    <label for="email">Unesi email:</label>
+    <input type="email" name="email" id="email" placeholder="Unesi email...">
+    <br>
+    <br>
+</form>
+<form action="#" method="get">
+    <input type="radio" name="gender" id="Admin">
+    <label for="Admin">Admin</label>
+    <br>
+    <br>
+    <input type="radio" name="gender" id="Gost">
+    <label for="Gost">Gost</label>
+    <br>
+    <br>
+    <input type="radio" name="gender" id="Drugo">
+    <label for="Drugo">Drugo</label>
+<br>
+<br>
+<input type="submit" value="Pošalji">
+<input type="reset" value="Poništi">
+</form>
+
+ <h2>Audio element</h2>  
+  <audio controls>
+    <source src="../Kolokvij 1/'I'll Be There For You' (Friends Theme Song).mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Video element</h2>
+<video src="../Kolokvij 1/'I'll Be There For You' (Friends Theme Song).mp4" width="450" height="360" controls poster="../Audio_video/friends.jpg">
+    Your browser does not support the video tag.
+
+</video>
+</body>
+</html>
