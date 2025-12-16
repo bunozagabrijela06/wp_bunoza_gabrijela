@@ -21,6 +21,5 @@ else
 let masa = prompt("Unesi svoju masu u kg:");
 let visina = prompt("Unesi svoju visinu u metrima:");
 let bmi = Math.round(masa / (visina * visina));
-
 alert("Vaš BMI iznosi: " + bmi);
 
