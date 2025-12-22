@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. kolokvij</title>
+    <style>
+.crna{
+    width: 500px;
+     height: 300px;
+    background-color: black;
+    position: relative;
+}
+.crvena{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    left: 300px;
+}
+.zuta{
+    width: 200px;
+    height: 300px;
+    background-color: yellow;
+    position: absolute;
+    left: 150px;
+}
+
+.container {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+      gap: 10px;
+        width: 50px;
+        height: 100px;
+        
+    }
+
+
+ .box1 {
+        border: 1px solid black;
+        border-top: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: lightgray;
+        
+        
+    }
+ .box2 {
+        border: 1px solid black;
+        border-top: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: lightyellow;
+      
+    }
+ .box3 {
+        border: 1px solid black;
+        border-top: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: lightblue;
+    }
+ .box4 {
+        border: 1px solid black;
+        border-top: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: lightgreen;
+    }
+
+.blue {
+    color: blue;
+    margin:20px;
+    }
+.green {
+    color: green;
+    margin:30px;
+    }
+.red {      
+    color: red;  
+     margin:40px; 
+    }
+#first {
+    font-weight: bold;
+     margin:16px;
+    }
+#second {
+    font-style: italic;
+    margin:27px;
+    }
+    </style>
+</head>
+<body>
+    <h2>Zastava Belgije</h2>
+    <div class="crna">
+        <div class="crvena"></div>
+        <div class="zuta"></div>
+    </div>
+
+
+    <h2>CSS grid</h2>
+
+     <div class="container">
+    <div class="one">
+      <p>Prvi</p>
+    </div>
+    <div class="two">
+      <p>Drugi</p>
+    </div>
+    <div class="three">
+      <p>Treći</p>
+    </div>
+    <div class="four">
+      <p>Četvrti </p>
+    </div>
+    </div class="container">
+    <br>
+
+   <h2>Box model</h2>
+   <div class="box1">
+    <p>Ovo je prvi div element.</p>
+   </div>
+   
+    <div class="box2">
+        <p>Ovo je drugi div element.</p>
+    </div>
+    <div class="box3">
+        <p>Ovo je treći div element.</p>
+    </div>
+    <div class="box4">
+        <p>Ovo je četvrti div element.</p>
+    </div>
+
+    <h2>Upotreba klase i ID-a</h2>
+    <div>
+        <p class="blue">Ovo je paragraf plave boje.</p>
+        <p class="green">Ovo je paragraf zelene boje.</p>
+        <p class="red">Ovo je paragraf crvene boje.</p>
+        <p id="first">Ovo je prvi ID paragraf.</p>
+        <p id="second">Ovo je drugi ID paragraf.</p>
+
+   </div>
+    <script src="./index.js"></script>
+</body>
+</html>
