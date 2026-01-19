@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+#header {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.naslov-odjeljka {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 ;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+.navigation {
+    background-color: #333;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li {
+    margin: 10px 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #ff7043;
+}
+
+.recepti {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.recept {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    flex: 1 1 350px;
+}
+
+
+
+.recept img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+     position: relative;
+    z-index: 5;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.grid-item {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    background-color: #e85c30;
+}
+
+
+#glavna,
+#deserti,
+#zdravo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+@media (max-width: 480px) {
+    #glavna,
+    #deserti,
+    #zdravo {
+        flex-direction: column;
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
